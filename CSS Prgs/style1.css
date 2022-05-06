@@ -1,0 +1,48 @@
+.img1{
+    display: flex;
+    z-index: 1;
+    position: relative;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+
+    animation: man;
+    animation-duration: 4s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+}
+@keyframes man {
+    from{top: 250px; top:0px;}
+    to{top: 0px; top:250px}
+}
+.divImg{
+    background-image: url(spider-man-web.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    align-items: center;
+    background-color: rgb(191, 244, 244);
+}
+.smText{
+    text-align: center;  
+    font-family: 'spidermanregular';
+    font-weight: normal;
+    font-size: xxx-large;
+    
+}
+.container{
+    position: relative;
+}
+.img2{
+    position: absolute;
+    margin-top: 1px;
+    height: auto;
+    width: 100%;
+}
+.para{
+    flex: content;
+    position: absolute;
+    color: beige;
+
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p>Loops in Javascript</p>
+    <script>
+        // //while loop
+        // let i = 0
+        // while (i < 3) {
+        //     alert(i)
+        //     i++
+        // }
+
+        // //do while loop
+        // let j = 5
+        // do{
+        //     alert(j)
+        //     j++
+        // }while (j<10);
+
+        // // for loop
+        // for (let i = 0; i < 5; i++) {
+        //     alert(i)            
+        // }
+
+        // // skipping
+        // let k=13
+        // for(;k<18;){
+        //     alert(k++)
+        // }
+
+        // breaking the loop
+        let sum = 0;
+        while (true) {
+            let value = +prompt('Enter a number','');
+            if (!value)
+                break;
+            sum =+value;
+        }
+        alert('SUM:'+sum);
+
+        for (let i = 0; i < 10; i++) {
+            if (i % 2 == 0) {
+                continue
+            }
+            alert(i)
+        }
+    </script>
+</body>
+</html>
